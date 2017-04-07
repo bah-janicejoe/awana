@@ -2,3 +2,8 @@ $ cat .gitignore
 # exclude everything except directory foo/bar
 /node_modules
 /build
+/src/main.js
+/src/main.js.map
+/src/app/**/*.js
+/src/app/**/*.map
+/src/app/**/*.css
