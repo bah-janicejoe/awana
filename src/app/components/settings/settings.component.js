@@ -7,31 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var settings_component_1 = require("components:settings/settings.component");
-var appRoutes = [
-    {
-        path: "",
-        pathMatch: "full",
-    }, {
-        path: "class/:id"
-    }, {
-        path: "settings",
-        component: settings_component_1.SettingsComponent
+var SettingsComponent = (function () {
+    function SettingsComponent() {
     }
-];
-var RouteModule = (function () {
-    function RouteModule() {
-    }
-    return RouteModule;
+    return SettingsComponent;
 }());
-RouteModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            router_1.RouterModule.forRoot(appRoutes)
-        ],
-        exports: [router_1.RouterModule]
+SettingsComponent = __decorate([
+    core_1.Component({
+        selector: "settings",
+        template: "\n    <ul>\n      <li>Create Year</li>\n      <li>Adjust Schedule</li>\n    </ul>\n  "
     })
-], RouteModule);
-exports.RouteModule = RouteModule;
-//# sourceMappingURL=router.module.js.map
+], SettingsComponent);
+exports.SettingsComponent = SettingsComponent;
+//# sourceMappingURL=settings.component.js.map

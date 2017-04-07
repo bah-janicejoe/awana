@@ -4,15 +4,16 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 
 //Bootstraped Components
+import {ContentComponent} from "../components/content.component";
 
 //services
-
 
 //Test Data imports
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 
 //Route Components
 import {RouteModule} from "./router.module";
+import {SettingsComponent} from "../components/settings/settings.component";
 
 
 //Directives
@@ -27,13 +28,13 @@ import {RouteModule} from "./router.module";
     HttpModule
   ],
   declarations: [
-
+    ContentComponent
   ],
   providers:[
 
   ],
   bootstrap:    [
-  
+    ContentComponent
   ]
 })
 

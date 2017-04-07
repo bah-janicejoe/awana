@@ -10,6 +10,8 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
+//Bootstraped Components
+var content_component_1 = require("../components/content.component");
 //Route Components
 var router_module_1 = require("./router.module");
 //Directives
@@ -27,9 +29,13 @@ AppModule = __decorate([
             forms_1.ReactiveFormsModule,
             http_1.HttpModule
         ],
-        declarations: [],
+        declarations: [
+            content_component_1.ContentComponent
+        ],
         providers: [],
-        bootstrap: []
+        bootstrap: [
+            content_component_1.ContentComponent
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;

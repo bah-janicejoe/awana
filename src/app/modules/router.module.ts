@@ -1,16 +1,17 @@
 import { NgModule }      from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
 
-
+import {SettingsComponent} from "components:settings/settings.component";
 
 const appRoutes: Routes = [
   {
     path:"",
-    pathMatch:"full"
+    pathMatch:"full",
   },{
-    path:"user/new"
+    path:"class/:id"
   },{
-    path:"user/:id"
+    path:"settings",
+    component:SettingsComponent
   }
 ];
 

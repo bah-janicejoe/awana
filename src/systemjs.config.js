@@ -7,7 +7,11 @@
     paths: {
       // paths serve as alias
       'npm:': 'node_modules/',
-      'images':'build/images/'
+      'images':'build/images/',
+      'components:':'src/app/components/',
+      'services:':'src/app/services/',
+      'modules:':'src/app/modules/',
+      'directives:':'src/app/directives/',
     },
     // map tells the System loader where to look for things
     map: {
