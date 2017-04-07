@@ -7,17 +7,13 @@
     paths: {
       // paths serve as alias
       'npm:': 'node_modules/',
-      'images':'build/images/',
-      'components:':'src/app/components/',
-      'services:':'src/app/services/',
-      'modules:':'src/app/modules/',
-      'directives:':'src/app/directives/',
+      'images':'build/images/'
     },
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
       'app': 'app',
-
+      
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',

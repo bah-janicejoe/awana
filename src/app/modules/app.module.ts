@@ -28,7 +28,8 @@ import {SettingsComponent} from "../components/settings/settings.component";
     HttpModule
   ],
   declarations: [
-    ContentComponent
+    ContentComponent,
+    SettingsComponent
   ],
   providers:[
 
